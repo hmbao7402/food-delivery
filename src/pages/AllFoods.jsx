@@ -51,7 +51,7 @@ const AllFoods = () => {
 									onChange={(event) => setSearchTerm(event.target.value)}
 								/>
 								<span>
-									<i class='ri-search-line'></i>
+									<i className='ri-search-line'></i>
 								</span>
 							</div>
 						</Col>
@@ -68,8 +68,8 @@ const AllFoods = () => {
 						</Col>
 						{displayPage.map((item) => {
 							return (
-								<Col lg='3' md='4' sm='6' xs='6' className='mb-4'>
-									<ProductCard item={item} key={item.id} />
+								<Col lg='3' md='4' sm='6' xs='6' key={item.id} className='mb-4'>
+									<ProductCard item={item} />
 								</Col>
 							);
 						})}

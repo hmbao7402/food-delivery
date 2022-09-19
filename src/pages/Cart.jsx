@@ -44,7 +44,7 @@ const Cart = () => {
 									Subtotal: $<span className='cart__subtotal'>{totalAmount}</span>
 									<p>Taxes and shipping will be calculated at checkout</p>
 									<div className='cart__page-btn'>
-										<button class='cart__btn me-3'>
+										<button className='cart__btn me-3'>
 											<Link to='/foods'>Continue Shopping</Link>
 										</button>
 										<button className='cart__btn'>
@@ -78,7 +78,7 @@ const Tr = (props) => {
 			<td className='text-center'>${price}</td>
 			<td className='text-center'>x{quantity}</td>
 			<td className='text-center cart__item-delete'>
-				<i class='ri-delete-bin-line' onClick={deleteItem}></i>
+				<i className='ri-delete-bin-line' onClick={deleteItem}></i>
 			</td>
 		</tr>
 	);

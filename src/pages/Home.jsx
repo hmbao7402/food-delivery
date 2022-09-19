@@ -94,7 +94,7 @@ const Home = () => {
 
 								<div className='hero__buttons d-flex align-items-center gap-5 mt-4'>
 									<button className='order__btn d-flex justify-content-between align-items-center'>
-										Order now <i class='ri-arrow-right-s-line'></i>
+										Order now <i className='ri-arrow-right-s-line'></i>
 									</button>
 									<button className='all__foods-btn'>
 										<Link to='/foods'>See all foods</Link>
@@ -104,13 +104,13 @@ const Home = () => {
 								<div className='hero__service d-flex align-items-center gap-5 mt-5'>
 									<p className='d-flex align-items-center gap-2'>
 										<span className='shipping__icon'>
-											<i class='ri-car-line'></i>
+											<i className='ri-car-line'></i>
 										</span>{' '}
 										No shipping charge
 									</p>
 									<p className='d-flex align-items-center gap-2'>
 										<span className='shipping__icon'>
-											<i class='ri-shield-check-line'></i>
+											<i className='ri-shield-check-line'></i>
 										</span>{' '}
 										100% secure checkout
 									</p>
@@ -245,7 +245,7 @@ const Home = () => {
 								<ListGroup className='mt-5'>
 									<ListGroupItem className='border-0 ps-0'>
 										<p className='choose__us-title d-flex align-items-center gap-2'>
-											<i class='ri-checkbox-circle-line'></i> Fresh and Tasty
+											<i className='ri-checkbox-circle-line'></i> Fresh and Tasty
 											foods
 										</p>
 										<p className='choose__us-desc'>
@@ -255,7 +255,7 @@ const Home = () => {
 									</ListGroupItem>
 									<ListGroupItem className='border-0 ps-0'>
 										<p className='choose__us-title d-flex align-items-center gap-2'>
-											<i class='ri-checkbox-circle-line'></i> Quality support
+											<i className='ri-checkbox-circle-line'></i> Quality support
 										</p>
 										<p className='choose__us-desc'>
 											Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -264,7 +264,7 @@ const Home = () => {
 									</ListGroupItem>
 									<ListGroupItem className='border-0 ps-0'>
 										<p className='choose__us-title d-flex align-items-center gap-2'>
-											<i class='ri-checkbox-circle-line'></i> Order from any
+											<i className='ri-checkbox-circle-line'></i> Order from any
 											location
 										</p>
 										<p className='choose__us-desc'>
