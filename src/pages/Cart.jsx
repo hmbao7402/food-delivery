@@ -5,9 +5,11 @@ import '../styles/cart-page.css';
 import CommonSection from '../components/UI/common-section/CommonSection';
 import Helmet from '../components/Helmet/Helmet';
 import { cartActions } from '../store/cart/cartSlice';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 	const cartItems = useSelector((state) => state.cart.cartItems);
+	const totalAmount = useSelector((state) => state.cart.totalAmount);
 
 	return (
 		<Helmet title='Cart'>
@@ -36,6 +38,21 @@ const Cart = () => {
 									</tbody>
 								</table>
 							)}
+
+							<div className='mt-4'>
+								<h6>
+									Subtotal: $<span className='cart__subtotal'>{totalAmount}</span>
+									<p>Taxes and shipping will be calculated at checkout</p>
+									<div className='cart__page-btn'>
+										<button class='cart__btn me-3'>
+											<Link to='/foods'>Continue Shopping</Link>
+										</button>
+										<button className='cart__btn'>
+											<Link to='/checkout'>Proceed to checkout</Link>
+										</button>
+									</div>
+								</h6>
+							</div>
 						</Col>
 					</Row>
 				</Container>
